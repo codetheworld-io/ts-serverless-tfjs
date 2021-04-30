@@ -12,7 +12,12 @@
     "module": "CommonJS",
     "outDir": "lib",
   },
-  "include": ["src/**/*.ts", "serverless.ts"],
+  "include": [
+    "src/**/*.ts",
+    "serverless.ts",
+    "serverless.base.ts",
+    "serverless.deploy.ts",
+  ],
   "exclude": [
     "node_modules/**/*",
     ".serverless/**/*",

@@ -7,7 +7,12 @@
     "offline": "sls offline --noPrependStageInUrl",
     "test": "jest --silent",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "sls:webpack": "sls webpack",
+    "prebuild:image": "npm run sls:webpack",
+    "build:image": "docker build -t ts-jest-serverless-dev-classify .",
+    "predeploy": "npm run build:image",
+    "deploy": "sls deploy --config=serverless.deploy.ts"
   },
   "engines": {
     "node": ">=14.15.0"
