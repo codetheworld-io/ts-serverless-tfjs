@@ -1,6 +1,6 @@
-import schema from './schema';
 import { handlerPath } from '@libs/handlerResolver';
 import { AWSFunction } from '@libs/lambda';
+import schema from './schema';
 
 export default {
   handler: `${handlerPath(__dirname)}/handler.main`,
@@ -8,7 +8,7 @@ export default {
     {
       http: {
         method: 'post',
-        path: 'hello',
+        path: 'classify',
         request: {
           schemas: {
             'application/json': schema

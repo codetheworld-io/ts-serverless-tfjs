@@ -2,6 +2,9 @@
   "typescript.tsdk": "node_modules/typescript/lib",
   "cSpell.words": [
     "middyfy",
-    "tfjs"
+    "mobilenet",
+    "tensorflow",
+    "tfjs",
+    "tfnode"
   ]
 }

@@ -2,3 +2,4 @@ node_modules
 .serverless
 .webpack
 coverage
+mobilenet_v2

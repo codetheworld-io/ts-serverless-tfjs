@@ -1,12 +1,15 @@
 import type { AWS } from '@serverless/typescript';
 
-import hello from '@functions/hello';
+import classify from '@functions/classify';
 
 const serverlessConfiguration: AWS = {
   service: 'ts-jest-serverless',
   disabledDeprecations: [
     'CLI_OPTIONS_SCHEMA',
   ],
+  package: {
+    individually: true,
+  },
   frameworkVersion: '2',
   custom: {
     webpack: {
@@ -21,6 +24,9 @@ const serverlessConfiguration: AWS = {
   provider: {
     name: 'aws',
     runtime: 'nodejs14.x',
+    region: 'ap-northeast-1',
+    versionFunctions: false,
+    logRetentionInDays: 1,
     apiGateway: {
       minimumCompressionSize: 1024,
       shouldStartNameWithService: true,
@@ -31,7 +37,7 @@ const serverlessConfiguration: AWS = {
     lambdaHashingVersion: '20201221',
   },
   // import the function via paths
-  functions: { hello },
+  functions: { classify },
 };
 
 module.exports = serverlessConfiguration;

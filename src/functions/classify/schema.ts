@@ -1,7 +1,7 @@
 export default {
   type: "object",
   properties: {
-    name: { type: 'string' }
+    image: { type: 'string' }
   },
-  required: ['name']
+  required: ['image']
 } as const;
