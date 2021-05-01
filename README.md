@@ -1,6 +1,6 @@
-# ts-jest-serverless
+# ts-serverless-tfjs
 
-Source code for [How To Start Typescript + Node AWS Function With ServerlessJS?](https://hoangdv.medium.com/how-to-start-typescript-node-aws-function-with-serverlessjs-ef4b55910127)
+Source code for [How To Deploy A “Huge” Serverless Project To Aws? —Image Classification API With TensorflowJS](https://hoangdv.medium.com/how-to-deploy-a-huge-serverless-project-to-aws-image-classification-api-with-tensorflowjs-367a34dfe155)
 
 ## How to start?
 
@@ -28,4 +28,10 @@ npm run offline
 curl --location --request POST 'localhost:3000/hello' \
     --header 'Content-Type: application/json' \
     --data-raw '{ "name": "hoangdv" }'
+```
+
+## How to deploy?
+
+```
+npm run deploy
 ```
