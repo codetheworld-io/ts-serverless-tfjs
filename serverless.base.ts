@@ -9,12 +9,6 @@ const baseConfiguration: AWS = {
     individually: true,
   },
   frameworkVersion: '2',
-  custom: {
-    webpack: {
-      webpackConfig: './webpack.config.js',
-      includeModules: false,
-    },
-  },
   provider: {
     name: 'aws',
     runtime: 'nodejs14.x',

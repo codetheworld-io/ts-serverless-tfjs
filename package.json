@@ -4,7 +4,7 @@
   "description": "MobileNet Image Classification With TensorFlowJS",
   "main": "serverless.ts",
   "scripts": {
-    "offline": "sls offline --noPrependStageInUrl",
+    "offline": "sls offline --noPrependStageInUrl --allowCache",
     "test": "jest --silent",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",

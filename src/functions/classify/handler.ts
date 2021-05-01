@@ -5,7 +5,6 @@ import { middyfy } from '@libs/lambda';
 import schema from './schema';
 import mobilenet from '@libs/mobilenet';
 
-
 const classify: ValidatedEventAPIGatewayProxyEvent<typeof schema> = async (event) => {
   const imageBuffer = Buffer.from(event.body.image, 'base64');
 
